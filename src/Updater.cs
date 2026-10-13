@@ -124,8 +124,12 @@ public static class Updater
         File.Move(currentExe, oldExe);
         File.Move(tempExe, currentExe);
 
-        // Khởi động lại ứng dụng
-        Process.Start(new ProcessStartInfo(currentExe) { UseShellExecute = true });
+        // Khởi động lại ứng dụng (dùng UseShellExecute = false để tránh lỗi thiếu System.Threading.Thread trên single-file)
+        Process.Start(new ProcessStartInfo(currentExe)
+        {
+            UseShellExecute = false,
+            WorkingDirectory = Path.GetDirectoryName(currentExe)
+        });
         Environment.Exit(0);
     }
 }
