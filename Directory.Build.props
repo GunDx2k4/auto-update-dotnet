@@ -1,0 +1,30 @@
+<Project>
+  <PropertyGroup>
+    <!-- Language and Compilation Settings -->
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AnalysisLevel>latest-recommended</AnalysisLevel>
+    <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <AccelerateBuildsInVisualStudio>true</AccelerateBuildsInVisualStudio>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <!-- Assembly and Package Metadata -->
+    <Authors>GunDx2k4</Authors>
+    <Product>AutoUpdate</Product>
+    <Version>1.0.0</Version>
+    <Description>Demo Auto Update functionality for .NET applications.</Description>
+    <Copyright>Copyright © 2026 GunDx2k4. All rights reserved.</Copyright>
+    <PackageProjectUrl>https://github.com/GunDx2k4/auto-update-dotnet</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/GunDx2k4/auto-update-dotnet</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <NeutralLanguage>en-US</NeutralLanguage>
+
+    <!-- Default: Projects are not packable unless explicitly enabled -->
+    <IsPackable>false</IsPackable>
+    <WarnOnPackingNonPackableProject>false</WarnOnPackingNonPackableProject>
+  </PropertyGroup>
+</Project>
