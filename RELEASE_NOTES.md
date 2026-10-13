@@ -1,2 +1,2 @@
-### Có gì mới trong phiên bản v1.0.2:
-- Sửa lỗi crash khi tự khởi động lại: Sử dụng CreateProcess trực tiếp thay vì ShellExecute, tương thích hoàn toàn với single-file executable.
+### Có gì mới trong phiên bản v1.0.3:
+- Xác nhận cơ chế tự khởi động lại (Restart) hoạt động hoàn hảo sau khi cập nhật thành công.
